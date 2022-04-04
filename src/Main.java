@@ -1,11 +1,11 @@
-import java.util.Scanner;
-
 import modes.Decoder;
 import modes.DecoderBruteForce;
 import modes.Encoder;
 import utils.Constants;
 import utils.FileIOHandler;
 import utils.Validator;
+
+import java.util.Scanner;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
