@@ -12,7 +12,8 @@ public class Encoder {
                 if (alphabetCharIndex == Constants.INVALID_INDEX) {
                     System.out.println("Символ " + inputCharArray[i] + " не найден");
                 } else if (alphabetCharIndex + offset > (Constants.LATIN_ALPHABET_CHARS_LIST.size() - 1)) {
-                    resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get((alphabetCharIndex + offset) - Constants.LATIN_ALPHABET_CHARS_LIST.size());
+                    resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get((alphabetCharIndex + offset)
+                            - Constants.LATIN_ALPHABET_CHARS_LIST.size());
                 } else {
                     resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get(alphabetCharIndex + offset);
                 }
@@ -23,7 +24,8 @@ public class Encoder {
                 if (alphabetCharIndex == Constants.INVALID_INDEX) {
                     System.out.println("Символ " + inputCharArray[i] + " не найден");
                 } else if (alphabetCharIndex + offset < 0) {
-                    resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get((alphabetCharIndex + offset) + Constants.LATIN_ALPHABET_CHARS_LIST.size());
+                    resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get((alphabetCharIndex + offset)
+                            + Constants.LATIN_ALPHABET_CHARS_LIST.size());
                 } else {
                     resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get(alphabetCharIndex + offset);
                 }

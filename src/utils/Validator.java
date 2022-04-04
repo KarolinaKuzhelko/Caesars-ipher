@@ -32,7 +32,8 @@ public class Validator {
             return true;
         } else {
             System.out.println("-----------------------------------------------------------------");
-            System.out.println("!!!    Смещение должно быть в диапазоне от -" + alphabetListSize + " до " + alphabetListSize + "   !!!");
+            System.out.println("!!!    Смещение должно быть в диапазоне от -" + alphabetListSize + " до "
+                    + alphabetListSize + "   !!!");
             System.out.println("-----------------------------------------------------------------");
             System.out.print("Повторите ввод: ");
             return false;

@@ -30,7 +30,7 @@ public class DecoderBruteForce {
             }
         }
 
-        int indexAlphabet = -1;
+        int indexAlphabet = Constants.INVALID_INDEX;
         for (int i = 0; i < Constants.LATIN_ALPHABET_CHARS_LIST.size(); i++) {
             if (inputCharArray[index] == Constants.LATIN_ALPHABET_CHARS_LIST.get(i)) {
                 indexAlphabet = i;
@@ -47,7 +47,8 @@ public class DecoderBruteForce {
                 if (alphabetCharIndex == Constants.INVALID_INDEX) {
                     System.out.println("Символ " + inputCharArray[i] + " не найден");
                 } else if (alphabetCharIndex - offset < 0) {
-                    resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get((alphabetCharIndex - offset) + Constants.LATIN_ALPHABET_CHARS_LIST.size());
+                    resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get((alphabetCharIndex - offset)
+                            + Constants.LATIN_ALPHABET_CHARS_LIST.size());
                 } else {
                     resultCharsArray[i] = Constants.LATIN_ALPHABET_CHARS_LIST.get(alphabetCharIndex - offset);
                 }
